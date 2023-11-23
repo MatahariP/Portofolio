@@ -1,0 +1,211 @@
+:root{
+    --primary-color: #D9D9D9;
+    --secondary-color:#E9E9E9;
+    --Tertiary-color:#FFFFFF;
+    --primary-font-size: 15px;
+}
+
+*{
+    
+    font-family: 'Poppins';
+}
+
+header {
+    background-color: var(--primary-color);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: fixed;
+    
+    top: 0;
+    right: 0;
+    left: 0;
+    
+  }
+  
+  header ul {
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right; /* embuat teks di dalam header rata kanan */
+  }
+  
+  header li {
+  
+    display: inline-block;
+    margin-right: 45px; /* Sesuaikan margin sesuai kebutuhan */
+    font-size: var(--primary-font-size);
+}
+  header li :hover{
+    background-color: var(--secondary-color);
+    
+  }
+  .tag{
+    padding-inline-start: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
+    justify-content: center;
+    
+
+  }
+
+  .tag li{
+    padding: 8px 30px 8px 30px;
+    background-color: var(--primary-color);
+    border-radius: 9px;
+    display: inline-block;
+    margin-right: 36px; /* Sesuaikan margin sesuai kebutuhan */
+    margin-bottom: 20px;
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  
+main{
+    margin-top: 135px;
+    margin-left: 50px;
+
+}
+
+.icon{
+  width: 55px;
+  height: 50px;
+  margin-right: 10px;
+  margin-top: 21px;
+}
+
+/* Home */
+main .home{
+  margin-top: 255px;
+  margin-left: 50px;
+
+}
+
+.home button{
+  padding: 14px 40px;
+  border-radius: 102px;
+}
+
+aside {
+  float: left;
+  padding-top:35px;
+  padding-bottom: 25px;
+  padding-right: 10px;
+  background-color: var(--primary-color);
+  top: 0;
+  right: 0;
+  margin-left: -8px;
+  /* border-radius: 12px; */
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  
+}
+
+aside ul {
+  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* embuat teks di dalam header rata kanan */
+}
+
+
+/* aside li{
+  
+  
+} */
+
+.logo{
+  margin: 5px;
+  width: 30px;
+}
+
+
+.home .profile{
+  justify-content: center;
+  width: 300px;
+  margin-left: 100px;
+}
+
+/* About */
+.about .profile{
+  width: 325px;
+}
+.about p {
+  font-size: large;
+  text-align: justify;
+  
+}
+.about table {
+  display: flex;
+
+  justify-content:space-between;
+  padding-left: 125px;
+}
+
+.about td:first-child{
+  padding-right: 115px;
+}
+.about td:last-child{
+  
+  max-width: 500px;
+}
+
+/* Portofolio */
+.portofolio{
+  margin-left: 318px;
+  margin-right: 317px;
+}
+
+.portofolio .subTittle{
+  text-align:center;
+}
+
+.contents{
+  width: 772px;
+  height: max-content;
+  padding: 0px;
+  background-color: aqua;
+}
+
+.contentLeft{
+  width: 371px;
+  height: 360.6px;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+
+.contentRight{
+  width: 371px;
+  height: 360.6px;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  
+  background-color: var(--primary-color);
+}
+
+.contentTittle{
+  margin-top: 290px;
+  height: 72px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: var(--secondary-color);
+}
+
+.contentTittle p{
+  padding-top: 22px;
+  text-align: center;
+}
