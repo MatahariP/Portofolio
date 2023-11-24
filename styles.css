@@ -1,12 +1,11 @@
 :root{
-    --primary-color: rgb(217, 217, 217);
-    --secondary-color:rgb(233, 233, 233);
-    --Tertiary-color:rgb(255, 255, 255);
+    --primary-color: #98C5DF;
+    --secondary-color:#8CCEF2;
+    --Tertiary-color:#82B6D3;
     --primary-font-size: 15px;
 }
 
 *{
-    
     font-family: 'Poppins';
 }
 
@@ -25,6 +24,7 @@ footer p{
   
 }
 header {
+  font-weight: 1000;
     background-color: var(--primary-color);
     padding-top: 25px;
     padding-bottom: 25px;
@@ -41,29 +41,22 @@ header {
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: right; /* embuat teks di dalam header rata kanan */
+    text-align: right; 
   }
   
   header li {
-  
+    font-weight: 1000;
     display: inline-block;
-    margin-right: 45px; /* Sesuaikan margin sesuai kebutuhan */
+    margin-right: 45px; 
     font-size: var(--primary-font-size);
 }
-  /* header li :hover{
-    background-color: var(--secondary-color);
-    
-  } */
+
   .tag{
     padding-inline-start: 0px;
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
-    /* align-items: flex-start; */
-    /* background-color: black; */
     gap: 5px;
     justify-content: center;
-    /* justify-content: center; */
     align-content: stretch;
     
 
@@ -74,12 +67,12 @@ header {
     background-color: var(--primary-color);
     border-radius: 9px;
     display: inline-block;
-    /* margin-right: 10px; Sesuaikan margin sesuai kebutuhan */
     margin-bottom: 20px;
+    font-weight: 1000;
   }
 
   .tag li:hover{
-    background-color: #CCCBCB;
+    background-color: var(--Tertiary-color);
   }
 
   
@@ -87,6 +80,7 @@ header {
   .title{
     display: flex;
     justify-content: center;
+    font-weight: 700;
   }
   a{
     text-decoration: none;
@@ -107,16 +101,19 @@ main{
   margin-top: 21px;
 }
 
+
 /* Home */
 main .home{
   margin-top: 255px;
   margin-left: 50px;
-
+  ;
 }
 
 .home button{
   padding: 14px 40px;
   border-radius: 102px;
+  font-weight: bolder;
+  background-color: var(--Tertiary-color);
   border: 2px solid var(--Tertiary-color);
 }
 
@@ -126,6 +123,7 @@ main .home{
 .home h1{
   line-height: 70px;
   font-size: 40px;
+  font-weight: bolder;
 
 }
 .home td:last-child{
@@ -137,12 +135,12 @@ aside {
   padding-top:35px;
   padding-bottom: 25px;
   padding-right: 10px;
+  padding-left: 10px;
   background-color: var(--primary-color);
   top: 0;
   right: 0;
-  margin-top: -310px;
-  margin-left: -8px;
-  /* border-radius: 12px; */
+  margin-top: 105px;
+  margin-left: -58px;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   
@@ -153,14 +151,8 @@ aside ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center; /* embuat teks di dalam header rata kanan */
+  text-align: center;
 }
-
-
-/* aside li{
-  
-  
-} */
 
 .logo{
   margin: 5px;
@@ -172,6 +164,18 @@ aside ul {
   justify-content: center;
   width: 350px;
   margin-left: 100px;
+}
+#LinkedIn:hover{
+  content: url('/src/linkedin.png');
+}
+#github:hover{
+  content: url('/src/github-logo.png');
+}
+#Instagram:hover{
+  content: url('/src/Instagram.png');
+}
+#gmail:hover{
+  content: url('/src/Email.png');
 }
 
 /* About */
@@ -221,38 +225,25 @@ aside ul {
   justify-content: space-between;
 }
 
-/* .contentLeft{
+.content{
+  
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 371px;
   height: 360.6px;
-  float: left;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
   background-color: var(--primary-color);
 }
-
-.contentRight{
-  width: 371px;
-  height: 360.6px;
-  float: right;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  
-  background-color: var(--primary-color);
-} */
-
-.content{
-  background-color: var(--primary-color);
-  width: 371px;
-  height: 360.6px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 10px;
+.sertifikat{
+  width: 50px;
 }
 .contentTittle{
   margin-top: 290px;
   height: 72px;
+  font-weight: 1000;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: var(--secondary-color);
@@ -281,9 +272,8 @@ aside ul {
   .contentText{
     padding-top: 5px;
     display: block;
-    /* margin-top: -16px; */
     height: 200px;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255,255,255,0.8)
   }
   
   
@@ -294,20 +284,16 @@ aside ul {
     padding-inline-start: 0px;
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: row; */
-    /* align-items: flex-start; */
-    /* background-color: black; */
     gap: 5px;
     justify-content: center;
-    /* justify-content: center; */
     align-content: stretch;
+    font-weight: 1000;
   }
   .subMenu li{
     padding: 8px 30px 8px 30px;
     
     border-radius: 9px;
     display: inline-block;
-    /* margin-right: 10px; Sesuaikan margin sesuai kebutuhan */
     margin-bottom: 20px;
   }
 
@@ -324,6 +310,7 @@ aside ul {
     flex-direction: column;
     margin-bottom: 50px;
     border-radius: 15px;
+    font-weight: 1000;
     background-color: var(--primary-color);
   }
  
@@ -341,10 +328,10 @@ aside ul {
   }
   
   #submit{
-    background-color: #CCCBCB;
+    background-color: var(--Tertiary-color);
     font-size: 25px;
     border-radius: 15px;
-    border: 2px solid #CCCBCB;
+    border: 2px solid var(--Tertiary-color);
     width: 200px;
     height: 50px;
   }
