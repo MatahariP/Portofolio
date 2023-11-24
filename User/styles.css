@@ -10,6 +10,20 @@
     font-family: 'Poppins';
 }
 
+footer{
+  background-color: var(--secondary-color);
+  margin-top: 625px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  
+}
+
+footer p{
+  
+}
 header {
     background-color: var(--primary-color);
     padding-top: 25px;
@@ -82,6 +96,7 @@ header {
 main{
     margin-top: 135px;
     margin-left: 50px;
+    margin-bottom: 70px;
 
 }
 
