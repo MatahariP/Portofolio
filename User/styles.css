@@ -36,17 +36,21 @@ header {
     margin-right: 45px; /* Sesuaikan margin sesuai kebutuhan */
     font-size: var(--primary-font-size);
 }
-  header li :hover{
+  /* header li :hover{
     background-color: var(--secondary-color);
     
-  }
+  } */
   .tag{
     padding-inline-start: 0px;
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: row; */
     /* align-items: flex-start; */
+    /* background-color: black; */
+    gap: 5px;
     justify-content: center;
+    /* justify-content: center; */
+    align-content: stretch;
     
 
   }
@@ -56,9 +60,15 @@ header {
     background-color: var(--primary-color);
     border-radius: 9px;
     display: inline-block;
-    margin-right: 36px; /* Sesuaikan margin sesuai kebutuhan */
+    /* margin-right: 10px; Sesuaikan margin sesuai kebutuhan */
     margin-bottom: 20px;
   }
+
+  .tag li:hover{
+    background-color: #CCCBCB;
+  }
+
+  
 
   .title{
     display: flex;
@@ -94,6 +104,18 @@ main .home{
   border-radius: 102px;
 }
 
+.home table{
+  margin-left: 80px;
+}
+.home h1{
+  line-height: 70px;
+  font-size: 40px;
+
+}
+.home td:last-child{
+  padding-left: 100px;
+  padding-top: 80px;
+}
 aside {
   float: left;
   padding-top:35px;
@@ -131,7 +153,7 @@ aside ul {
 
 .home .profile{
   justify-content: center;
-  width: 300px;
+  width: 350px;
   margin-left: 100px;
 }
 
@@ -160,10 +182,11 @@ aside ul {
 }
 
 /* Portofolio */
-.portofolio{
+.portofolio, .certificate, .contact{
   margin-left: 318px;
   margin-right: 317px;
 }
+
 
 .portofolio .subTittle{
   text-align:center;
@@ -173,10 +196,13 @@ aside ul {
   width: 772px;
   height: max-content;
   padding: 0px;
-  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.contentLeft{
+/* .contentLeft{
   width: 371px;
   height: 360.6px;
   float: left;
@@ -195,8 +221,16 @@ aside ul {
   border-radius: 10px;
   
   background-color: var(--primary-color);
-}
+} */
 
+.content{
+  background-color: var(--primary-color);
+  width: 371px;
+  height: 360.6px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
 .contentTittle{
   margin-top: 290px;
   height: 72px;
@@ -209,3 +243,65 @@ aside ul {
   padding-top: 22px;
   text-align: center;
 }
+
+
+/* Certificate */
+.subMenu{
+    padding-inline-start: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
+    /* background-color: black; */
+    gap: 5px;
+    justify-content: center;
+    /* justify-content: center; */
+    align-content: stretch;
+  }
+  .subMenu li{
+    padding: 8px 30px 8px 30px;
+    
+    border-radius: 9px;
+    display: inline-block;
+    /* margin-right: 10px; Sesuaikan margin sesuai kebutuhan */
+    margin-bottom: 20px;
+  }
+
+  .subMenu li:hover{
+    background-color: var(--primary-color);
+  }
+
+  /* Contact */
+  .formBox{
+    margin-top: 30px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+  }
+ 
+  #name ,#email, #message{
+    height: 50px;
+    width: 650px;
+    background-color: white;
+    border: 2px solid white;
+    margin: 5px;
+    border-radius: 15px;
+    padding-left: 30px;
+  }
+  #message{
+    height: 100px;
+  }
+  
+  #submit{
+    background-color: #CCCBCB;
+    font-size: 25px;
+    border-radius: 15px;
+    border: 2px solid #CCCBCB;
+    width: 200px;
+    height: 50px;
+  }
+  
